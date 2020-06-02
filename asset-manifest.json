@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.js": "/pedrovgas.github.io/static/js/main.8c82b271.chunk.js",
-    "main.js.map": "/pedrovgas.github.io/static/js/main.8c82b271.chunk.js.map",
+    "main.css": "/pedrovgas.github.io/static/css/main.09d77f5f.chunk.css",
+    "main.js": "/pedrovgas.github.io/static/js/main.08b2efbd.chunk.js",
+    "main.js.map": "/pedrovgas.github.io/static/js/main.08b2efbd.chunk.js.map",
     "runtime-main.js": "/pedrovgas.github.io/static/js/runtime-main.777a0d1c.js",
     "runtime-main.js.map": "/pedrovgas.github.io/static/js/runtime-main.777a0d1c.js.map",
-    "static/js/2.1399f75f.chunk.js": "/pedrovgas.github.io/static/js/2.1399f75f.chunk.js",
-    "static/js/2.1399f75f.chunk.js.map": "/pedrovgas.github.io/static/js/2.1399f75f.chunk.js.map",
+    "static/js/2.c2d9fd24.chunk.js": "/pedrovgas.github.io/static/js/2.c2d9fd24.chunk.js",
+    "static/js/2.c2d9fd24.chunk.js.map": "/pedrovgas.github.io/static/js/2.c2d9fd24.chunk.js.map",
     "index.html": "/pedrovgas.github.io/index.html",
-    "precache-manifest.1d63a38a117638765ad4bac31c01ff7c.js": "/pedrovgas.github.io/precache-manifest.1d63a38a117638765ad4bac31c01ff7c.js",
+    "precache-manifest.21ffb8980d988f7eba17a9fb0d817a48.js": "/pedrovgas.github.io/precache-manifest.21ffb8980d988f7eba17a9fb0d817a48.js",
     "service-worker.js": "/pedrovgas.github.io/service-worker.js",
-    "static/js/2.1399f75f.chunk.js.LICENSE.txt": "/pedrovgas.github.io/static/js/2.1399f75f.chunk.js.LICENSE.txt",
+    "static/css/main.09d77f5f.chunk.css.map": "/pedrovgas.github.io/static/css/main.09d77f5f.chunk.css.map",
+    "static/js/2.c2d9fd24.chunk.js.LICENSE.txt": "/pedrovgas.github.io/static/js/2.c2d9fd24.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/pedrovgas.github.io/static/media/logo.cf96f12a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.777a0d1c.js",
-    "static/js/2.1399f75f.chunk.js",
-    "static/js/main.8c82b271.chunk.js"
+    "static/js/2.c2d9fd24.chunk.js",
+    "static/css/main.09d77f5f.chunk.css",
+    "static/js/main.08b2efbd.chunk.js"
   ]
 }
