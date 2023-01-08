@@ -1,0 +1,288 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700&display=swap');
+
+$color-primary: #00A800;
+$color-dark: #0D0F0D;
+$color-light: #E8E9F3;
+
+*:not(.selectable) {
+    user-select: none;
+}
+
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.sm {
+    font-size: calc(.725rem + .5vw) !important
+}
+
+.md {
+    font-size: calc(1.2rem + 1vw) !important
+}
+
+.lg {
+    font-size: calc(2.75rem + 3vw) !important
+}
+
+.xl {
+    font-size: calc(3rem + 3vw) !important
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    padding: 0 2rem;
+    gap: 1rem;
+
+    svg {
+        height: auto;
+    }
+
+    .container {
+        max-width: 1920px;
+        width: 100%;
+    }
+
+}
+
+.social-link {
+    text-decoration: none;
+    color: $color-primary;
+    padding: 5px 20px;
+    cursor: pointer;
+
+    i {
+        color: $color-primary;
+        transition: 250ms;
+        opacity: .5;
+    }
+
+    &:hover i {
+        opacity: 1;
+        text-shadow: none;
+        transform: scale(1.5)
+    }
+
+    &:hover i.fa-instagram {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover i.fa-linkedin-in {
+        color: #0A66C2;
+    }
+
+    &:hover i.fa-github {
+        color: white;
+    }
+
+    &:hover i.fa-whatsapp {
+        color: #25D366;
+    }
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+#fullname,
+#name {
+    pointer-events: none;
+    overflow: none;
+    transition: 250ms ease;
+    width: 100%;
+    position: absolute;
+    top: -4.25vw;
+    left: 0;
+}
+
+#fullname {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+
+header .title {
+    width: 34em;
+    height: 100px;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    transition: 250ms step-end;
+
+    &:hover {
+        transition: 250ms step-start;
+        width: 100%;
+    }
+
+    &:hover #name {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    &:hover #fullname {
+        transform: none;
+        opacity: 1;
+    }
+
+    h1 {
+        white-space: nowrap;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: lighter;
+    }
+}
+
+
+.txt-green {
+    color: $color-primary;
+}
+
+.txt-dark {
+    color: $color-dark;
+}
+
+.txt-light {
+    color: $color-light;
+}
+
+.bg-green {
+    background-color: $color-primary;
+}
+
+.bg-dark {
+    background-color: $color-dark;
+}
+
+.bg-light {
+    background-color: $color-light;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to right top, #6bbc00, #6bc203, #6ac807, #69cf0c, #67d511, #5dcf1b, #53ca22, #49c427, #36b12d, #249f2f, #128c30, #007a2f);
+}
+
+.bg-image {
+    // background-color: green;
+    background: url('./../img/abstract.jpg') center no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+}
+
+h1.title {
+    margin: 0;
+    color: $color-light;
+    text-shadow: 0px 2px 10px rgba($color: $color-primary, $alpha: .5);
+    font-weight: 400;
+    font-family: 'BEBAS NEUE', sans-serif;
+    transition: background-color ease-in-out 250ms;
+    width: fit-content;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px #00000040;
+    border: .13rem solid rgba($color: #ffffff, $alpha: .65);
+    border-bottom: .13rem solid rgba($color: #ffffff, $alpha: .25);
+    border-right: .13rem solid rgba($color: #FFFFFF, $alpha: .25);
+    box-shadow: inset 5px 5px 20px -2px rgba(255, 255, 255, .075);
+    color: white;
+    cursor: pointer;
+    padding: 2rem;
+    width: 280px;
+    transition: transform ease-in-out 250ms;
+    position: relative;
+    margin-bottom: 1rem;
+
+    &:hover {
+        transform: scale(1.025);
+
+    }
+
+    .fa {
+        position: absolute;
+        top: 10px;
+        font-size: 3rem;
+        right: 10px;
+        color: rgba($color: $color-primary, $alpha: .25)
+    }
+
+    .card-header {
+        font-size: 1.25rem;
+        font-weight: bolder;
+
+    }
+
+    .card-content {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .card-footer {
+        margin-top: .25rem;
+
+        span {
+            margin: 0 .1rem;
+            font-size: .65rem;
+            background-color: rgba($color: $color-primary, $alpha: .25);
+            padding: .25rem;
+            border-radius: 3px;
+
+            &:first-child {
+                margin-left: none;
+            }
+        }
+    }
+}
+
+// Scrollbar
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #131313;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border: 1.5px solid #131313;
+}
