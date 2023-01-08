@@ -1,11 +1,12 @@
-$(function () {
-    $('#title').text('Xumba');
-});
+const d = new Date();
+let year = d.getFullYear();
 
+$(function () {
+    $("#year").text(year);
+});
 $.getJSON("./assets/json/projects.json",
     function (data) {
         $.each(data, function (i, e) {
-            console.log(e);
             let el = `<h1></h1>`
             let langs = '';
             $.each(e.languages, function (i, e) {
@@ -21,3 +22,11 @@ $.getJSON("./assets/json/projects.json",
         });
     }
 );
+
+
+function changeLanguage(lang = 'pt-br') {
+    $.getJSON("./assets/json/lang/" + lang + ".json",
+        function (d) { $.each(d, function (i, v) { $(i).text(v); }); }
+    );
+    return `language has changed to ${lang}.`;
+}
