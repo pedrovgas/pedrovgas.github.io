@@ -1,0 +1,30 @@
+$dark : #020702; // 60%
+$light : #D5E1D1; //30%
+$detail : #00A800; // 10%
+
+$colors: (
+    dark : $dark, // 60%
+    light : $light, //30%
+    detail : $detail, // 10%
+);
+
+//converte variáveis de SCSS em CSS!
+:root {
+    @each $name, $color in $colors{
+        --color-#{$name} : #{$color};
+    }
+}
+
+//cria função pra retornar cores!
+@function getColor($color-name){
+    @return var(--color-#{$color-name});
+}
+
+@each $name, $color in $colors{
+    .txt-#{$name}{
+        color: $color !important;
+    }
+    .bg-#{$name}{
+        background-color: $color !important;
+    }
+}
